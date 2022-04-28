@@ -1,0 +1,246 @@
+/* Sign Up starts */
+
+* {
+  background-color: #141518;
+  font-family: "Open Sans", sans-serif;
+}
+
+.signup-contain {
+  text-align: center;
+  /* border: 1px solid greenyellow; */
+}
+
+.signup-container p span {
+  margin-left: 3%;
+}
+
+.signup-container button {
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.signup-container button span {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.signup-container #signup-logo img {
+  width: 10%;
+  height: 70px;
+  align-content: center;
+}
+
+.signup-container .signup-box {
+  text-align: center;
+  /* border: 1px solid red; */
+  margin-top: 3%;
+}
+
+.signup-contain .box-1 {
+  /* border: 1 px solid red; */
+  margin-top: 4%;
+}
+
+.signup-contain .box-1 p {
+  font-size: small;
+  color: white;
+}
+
+.signup-contain .box-1 .logo-box {
+  border: 1px solid #2c2f34;
+  border-radius: 7px;
+  width: 20%;
+  margin: auto;
+  background-color: #2c2f34;
+}
+
+.box-1 .logo-box button {
+  background-color: #141518;
+  width: 15%;
+  margin: 2%;
+  border-radius: 5px;
+}
+
+.box-1 .logo-box button img {
+  width: 77%;
+  height: 30px;
+  margin: 8%;
+}
+
+.signup-container .box-2 {
+  border: 1px solid #2c2f34;
+  border-radius: 7px;
+  width: 20%;
+  margin: auto;
+  background-color: #2c2f34;
+}
+
+.signup-container .box-2 .form {
+  display: flex;
+  flex-direction: column;
+  background-color: #2c2f34;
+}
+
+.form input {
+  margin: 3%;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 2%;
+  color: white;
+}
+
+.form p {
+  background-color: #2c2f34;
+  color: #756a53;
+  font-weight: 100;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.form p + p {
+  margin-top: -1%;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.signup-btn {
+  color: white;
+  margin-left: 12%;
+}
+
+.signup-btn button {
+  margin-left: 1%;
+  background-color: #5c69ff;
+  border-radius: 5px;
+  width: 5%;
+  height: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Sign Up ends */
+
+/* Sign In starts */
+
+* {
+  background-color: #141518;
+  font-family: "Open Sans", sans-serif;
+}
+
+.signup-contain {
+  text-align: center;
+  /* border: 1px solid greenyellow; */
+}
+
+.signup-container p span {
+  margin-left: 3%;
+}
+
+.signup-container button {
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.signup-container button span {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.signup-container #signup-logo img {
+  width: 10%;
+  height: 70px;
+  align-content: center;
+}
+
+.signup-container .signup-box {
+  text-align: center;
+  /* border: 1px solid red; */
+  margin-top: 3%;
+}
+
+.signup-contain .box-1 {
+  /* border: 1 px solid red; */
+  margin-top: 4%;
+}
+
+.signup-contain .box-1 p {
+  font-size: small;
+  color: white;
+}
+
+.signup-contain .box-1 .logo-box {
+  border: 1px solid #2c2f34;
+  border-radius: 7px;
+  width: 20%;
+  margin: auto;
+  background-color: #2c2f34;
+}
+
+.box-1 .logo-box button {
+  background-color: #141518;
+  width: 15%;
+  margin: 2%;
+  border-radius: 5px;
+}
+
+.box-1 .logo-box button img {
+  width: 77%;
+  height: 30px;
+  margin: 8%;
+}
+
+.signup-container .box-2 {
+  border: 1px solid #2c2f34;
+  border-radius: 7px;
+  width: 20%;
+  margin: auto;
+  background-color: #2c2f34;
+}
+
+.signup-container .box-2 .form {
+  display: flex;
+  flex-direction: column;
+  background-color: #2c2f34;
+}
+
+.form input {
+  margin: 3%;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 2%;
+  color: white;
+}
+
+.form p {
+  background-color: #2c2f34;
+  color: #756a53;
+  font-weight: 100;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.form p + p {
+  margin-top: -1%;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.signup-btn {
+  color: white;
+  margin-left: 12%;
+}
+
+.signup-btn button {
+  margin-left: 1%;
+  background-color: #5c69ff;
+  border-radius: 5px;
+  width: 5%;
+  height: 35px;
+  font-weight: bold;
+}
+
+/* Sign In ends */

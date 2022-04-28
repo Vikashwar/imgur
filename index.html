@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="home.css" />
+    <title>Home Page</title>
+    <style>
+        #search-box {
+            margin: auto;
+            border: 1px solid #01001300;
+            border-radius: 4px;
+            width: 500px;
+            align-items: center;
+            height: 34px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #search-box input {
+            height: 100%;
+            width: 93%;
+            background-color: #454469;
+            font-weight: 500;
+            border: transparent;
+        }
+
+        #search-btn {
+            margin-left: -15%;
+            width: 2%;
+        }
+
+        #search-box input:focus {
+            outline: none;
+        }
+
+        #post-container {
+            display: grid;
+            grid-template-columns: repeat(4, 23.5%);
+            grid-gap: 2%;
+            grid-row-gap: 7%;
+            margin-top: 10px;
+        }
+
+        #imgs-div {
+            /* border: 1px solid red; */
+            width: 70%;
+            margin: auto;
+            margin-top: -100px;
+        }
+
+        #viral-tags {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            color: #BABEC4;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        #newest-div {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        #data-post {
+            background-color: #474A51;
+            margin-top: -21px;
+        }
+
+        #data-post p {
+            color: white;
+            font-weight: 500;
+            font-size: 15px;
+            padding: 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="home-container">
+        <div class="box-up">
+            <div class="navbar">
+                <img onclick="backHome()" src="./images/logo.png" />
+                <button>New post</button>
+                <input id="inp-val" type="text" placeholder="Images,#tags,@users oh my!" />
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <button class="ad" onclick="loadImg()">Go Ad-Free</button>
+                <button class="signin-btn" onclick="signinBtn()">Sign in</button>
+                <button onclick="signupBtn()">Sign up</button>
+            </div>
+        </div>
+        <h2 class="heading">Live, Laugh, Meme</h2>
+
+
+        <div id="more-tags">
+            <div id="explore-tags">
+                <p>EXPLORE TAGS</p>
+                <p>MORE TAGS +</p>
+            </div>
+            <div id="explore-div">
+                <div class="parent">
+                    <div class="child" id="more">
+                        <div class="first"><img
+                                src="https://github.com/HanumaraddiBV/imgur-homepage-clone/blob/main/images/1fDftsZ_d.jpg?raw=true"
+                                alt="" /></div>
+                        <div class="second">
+                            <p class="font1">Hydraulic Press</p>
+                            <p class="font2">FEATURED.270 Posts</p>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="first"><img
+                                src="https://github.com/HanumaraddiBV/imgur-homepage-clone/blob/main/images/4LBx79U_d.jpg?raw=true"
+                                alt="" /></div>
+                        <div class="second" id="second1">
+                            <p class="font1">Imgur13</p>
+                            <p class="font2">7,838 Posts</p>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="first">
+                            <img src="https://github.com/HanumaraddiBV/imgur-homepage-clone/blob/main/images/1z4dgZT_d.jpg?raw=true"
+                                alt="" />
+                        </div>
+                        <div class="second" id="second2">
+                            <p class="font1">Vintage</p>
+                            <p class="font2">8,931 Posts</p>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="first">
+                            <img src="https://github.com/HanumaraddiBV/imgur-homepage-clone/blob/main/images/4kmYoey_d.jpg?raw=true"
+                                alt="" />
+                        </div>
+                        <div class="second" id="second3">
+                            <p class="font1">Pokemon</p>
+                            <p class="font2">52,600 Posts</p>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="first" style="height: 40%">
+                            <img src="https://github.com/HanumaraddiBV/imgur-homepage-clone/blob/main/images/9r1qCDq_d.jpg?raw=true"
+                                alt="" />
+                        </div>
+                        <div class="second" id="second4">
+                            <p class="font1">Black History Month</p>
+                            <p class="font2">184 Posts</p>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="first" style="height: 40%">
+                            <img src="https://github.com/HanumaraddiBV/imgur-homepage-clone/blob/main/images/DbQMO3A_d.jpg?raw=true"
+                                alt="" />
+                        </div>
+                        <div class="second" id="second5">
+                            <p class="font1">Science And Tech</p>
+                            <p class="font2">44,949 Posts</p>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="first">
+                            <img src="https://github.com/HanumaraddiBV/imgur-homepage-clone/blob/main/images/avRBRpN_d.jpg?raw=true"
+                                alt="" />
+                        </div>
+                        <div class="second" id="second6">
+                            <p class="font1">Staff Picks</p>
+                            <p class="font2">6,538 Posts</p>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="first">
+                            <img src="https://github.com/HanumaraddiBV/imgur-homepage-clone/blob/main/images/bdRjrrI_d.jpg?raw=true"
+                                alt="" />
+                        </div>
+                        <div class="second" id="second7">
+                            <p class="font1">Gaming</p>
+                            <p class="font2">298,255 Posts</p>
+                        </div>
+                    </div>
+                    <div class="child">
+                        <div class="first">
+                            <img src="https://github.com/HanumaraddiBV/imgur-homepage-clone/blob/main/images/nrFCOUB_d.jpg?raw=true"
+                                alt="" />
+                        </div>
+                        <div class="second" id="second8">
+                            <p class="font1">Memes</p>
+                            <p class="font2">571,224 Posts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="imgs-div">
+        <div id="viral-tags">
+            <div>MOST VIRAL <i class="fa-solid fa-caret-down"></i></div>
+            <div id="newest-div">
+                <div>NEWEST <i class="fa-solid fa-caret-down"></i></div>
+                <div><i class="fa-solid fa-align-justify"></i> <i class="fa-solid fa-film"></i><i
+                        class="fa-solid fa-grid-2"></i></div>
+            </div>
+        </div>
+        <div id="post-container"></div>
+    </div>
+</body>
+
+</html>
+<script src="script.js">
+
+
+
+
+</script>
+
+<script>
+    let cont = document.getElementById("post-container");
+    document.getElementById("search-btn").addEventListener("click", getData);
+    async function getData() {
+        try {
+            cont.innerHTML = ""
+            let val = document.getElementById("inp-val").value || "bike";
+            console.log("val:", val);
+            let url = `https://pixabay.com/api/?key=26024658-799a3442a3820e22653a95e85&q=${val}&image_type=photo&pretty=true`;
+            let res = await fetch(url);
+            let data = await res.json();
+            console.log("data:", data);
+            imageDisplay(data.hits);
+        } catch (e) {
+            console.log("e:", e);
+        }
+    }
+    getData()
+    const imageDisplay = (data) => {
+        data.forEach((item) => {
+            let div = document.createElement("div");
+            div.id = "data-cont"
+            let img = document.createElement("img");
+            img.src = item.previewURL;
+            let div2 = document.createElement("div");
+            div2.id = "data-post"
+            let p = document.createElement("p");
+            p.innerText = item.tags;
+            let div6 = document.createElement("div");
+            div6.id = "i-tags"
+            let div3 = document.createElement("div");
+            div3.innerHTML = `<i class="fas fa-arrow-alt-circle-up"></i> ${item.likes} <i class="fas fa-arrow-circle-down"></i>`;
+            let div4 = document.createElement("div");
+            div4.innerHTML = `<i class="fas fa-comment-alt"></i> ${item.comments}`;
+            let div5 = document.createElement("div");
+            div5.innerHTML = `<i class="fas fa-eye"></i> ${item.views}`;
+            div6.append(div3, div4, div5);
+            div2.append(p, div6);
+            div.append(img, div2);
+            cont.append(div);
+        });
+    };
+</script>

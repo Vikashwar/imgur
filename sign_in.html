@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100&family=Open+Sans&family=Piazzolla:ital,wght@0,900;1,900&family=Playfair+Display:wght@500&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="sign_pages.css" />
+    <title>Sign Up Page</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="signup-container">
+        <button onclick="backHome()"><span>i</span> back to Imgur</button>
+        <div class="signup-contain">
+            <div class="signup-box">
+                <div id="signup-logo">
+                    <img src="./images/logo.png" />
+                </div>
+            </div>
+            <div class="box-1">
+                <p>Sign In with</p>
+                <div class="logo-box">
+                    <button>
+                        <img src="images/facebook.png" />
+                    </button>
+                    <button>
+                        <img src="images/twitter.png" />
+                    </button>
+                    <button>
+                        <img src="images/apple.png" />
+                    </button>
+                    <button>
+                        <img
+                            src="https://u9k8d2s6.stackpathcdn.com/wp-content/uploads/2020/07/google-pixel-white-logo.png" />
+                    </button>
+                    <button>
+                        <img src="images/facebook.png" />
+                    </button>
+                </div>
+                <p>or with Imgur</p>
+                <form onsubmit="login(event)" id="form">
+                    <div class="box-2">
+                        <div class="form">
+                            <input type="text" id="name" placeholder="Username or Email" />
+
+                            <input type="password" id="password1" placeholder="Password" />
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="signup-btn">
+                        <div>
+                            <h5>need an account? <span><button type="submit">Sign In</button></span> </h5>
+
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+<script src="script.js">
+
+</script>
